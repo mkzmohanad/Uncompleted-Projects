@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rock&Paper&scissor</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="this is a game page"/>
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    </head>
+    <body>
+        <main>
+            <div class="hidden win">
+                <div class="winner">
+                    <h1 class="winnerText">WIN</h1>
+                </div>
+            </div>
+            <section>
+                <div class="playerSec">
+                    <h2>Player</h2>
+                    <div class="allMoves">
+                        <img class="hidden playerMoves" src="" alt="">
+                    </div>
+                    <div class="playerScoreDiv">
+                        <h1>Player Score: <span class="playerScore">0</span></h1>
+                    </div>
+                    <div class="buttons">
+                        <button class="playerMove" id="rock">ROCK</button>
+                        <button class="playerMove" id="paper">PAPER</button>
+                        <button class="playerMove" id="scissor">SCISSORS</button>
+                    </div>
+                    <div class="restart">
+                        <button class="restartBtn"><span class="material-symbols-outlined">replay</span></button>
+                    </div>
+                </div>
+                <div class="computerSec">
+                    <h2>Computer</h2>
+                    <div class="allMoves">
+                        <img class="hidden computerMoves" src="" alt="">
+                    </div>
+                    <div class="playerScoreDiv">
+                        <h1>Computer Score: <span class="computerScore">0</span></h1>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="/script.js"></script>
+    </body>
+</html>

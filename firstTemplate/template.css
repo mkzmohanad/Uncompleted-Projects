@@ -1,0 +1,226 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: "Times New Roman", Georgia, Serif; */
+    font-family: "Times New Roman", Georgia, Serif;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:6.5vh;
+    box-shadow: 0 0 7px 0 gray;
+    font-size: 0.9em;
+    position: fixed;
+    z-index: 111111111111111;
+    background-color: white;
+}
+.classHome {
+    padding-left:15px;
+}
+ul {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    list-style: none;
+    width:18%;
+    padding-right:15px;
+    font-size:1em;
+}
+header a {
+    padding : 10px 10px;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 3px;
+}
+header a:hover {
+    background-color:rgba(128, 128, 128, 0.5);
+}
+main {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    /* justify-content:center; */
+    width:100%;
+    height:100vh;
+}
+.homeSection {
+    display: flex;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+}
+.homeImg {
+    width:95%;
+    height:100%;
+    position: relative;
+}
+.homeImg img {
+    width:100%;
+    height:95%;
+}
+.homeText p {
+    position: absolute;
+    /* bottom: 0; */
+    bottom:40px;
+    padding:20px;
+    left: 0;
+    font-size: 2.1em;
+    opacity: 0.6;
+    letter-spacing: 5px;
+}
+.aboutSection,.menuSection,.contactSection{
+    margin :20px 0;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    /* height:100vh; */
+    height:85vh;
+}
+.aboutImg,.menuImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    height:90%;
+    align-self: flex-start;
+}
+.aboutImg img,.menuImg img {
+    height:100%;
+    opacity: 0.75;
+    border-radius:5px;
+}
+.aboutInfo,.menuInfo {
+    display: flex;
+    flex-direction:column;
+    /* justify-content:center; */
+    align-items:center;
+    width:35%;
+    padding:15px 40px;
+    height:100%;
+}
+.aboutInfo h1,.aboutInfo h3 {
+    font-size:2em;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    letter-spacing:5px;
+    margin-bottom: 40px;
+}
+.aboutInfo h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.aboutInfo p {
+    margin-bottom:20px;
+    line-height: 25px;
+}
+.aboutInfo p span {
+    background-color: rgba(128, 128, 128, 0.114);
+    padding:3px 7px;
+}
+.secondP {
+    opacity: 0.6;
+}
+hr {
+    width: 70%;
+    background-color:rgba(128, 128, 128, 0.3);
+    padding:0.5px;
+    border:none;
+    margin-top:20px;
+    margin-bottom:70px;
+}
+.menuSection {
+    height:90vh;
+}
+.menuInfo {
+    align-items: flex-start;
+    /* padding-right:30px; */
+    padding-left:25px;
+}
+.menuInfo h1 {
+    align-self: center;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size:2em;
+    letter-spacing: 5px;
+}
+.menuInfo h3 {
+    font-weight: 300;
+    letter-spacing:4px;
+}
+.menuInfo p {
+    font-size: 0.85em;
+    opacity: 0.7;
+    padding-top:20px;
+    padding-bottom: 45px;
+}
+.menuImg {
+    height:100%;
+}
+.contactSection {
+    width:70%;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+}
+.contactSection h1 {
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size:2em;
+}
+.contactSection p {
+    padding-bottom: 20px;
+    font-size:0.95em;
+}
+.contactSection span {
+    color:#607d8b;
+    font-weight: 900;
+    font-size:1.2em;
+}
+form {
+    width:100%;
+}
+input {
+    display: block;
+    border:none;
+    padding:15px 5px;
+    width:100%;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+#submitForm {
+    border:none;
+    cursor: pointer;
+    width:12%;
+    padding:10px;
+    margin-top:30px;
+}
+#submitForm:hover {
+    background-color:rgba(128, 128, 128, 0.521);
+}
+footer {
+    margin-top:50px;
+    width:100%;
+    height:10vh;
+    background-color:rgba(128, 128, 128, 0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    font-size:0.9em;
+}
+footer span {
+    text-decoration: underline;
+    cursor: pointer
+}
+footer span:hover {
+    color:green;
+}
+
+/* media query for responsive: */

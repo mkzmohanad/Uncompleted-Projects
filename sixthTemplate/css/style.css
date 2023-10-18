@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --main-bg-color:#616161;
+    --second-bg-color:#f1f1f1;
+    --hover-color:#ccc;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    height:1000vh;
+}
+/* js style */
+.black {
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:black;
+    top:0;
+    z-index: 1111111111;
+}
+.hidden {
+    display: none;
+}
+/* to stop hover effect: */
+.stop-hover {
+    pointer-events: none;
+}
+/* js style */
+nav {
+    box-shadow:0 -10px 20px 0 black;
+    z-index: 111111;
+}
+.logo {
+    letter-spacing: 4.5px;
+}
+nav ul li {
+    letter-spacing: 0px;
+}
+nav ul li:hover,
+nav .logo:hover {
+    background-color: var(--hover-color);
+}
+/* start landing */
+.landing {
+    height:100vh;
+    background-image: url("/pics/mac.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.5);
+}
+.landing h1 {
+    font-size:4em;
+}
+@media (max-width:600px) {
+    .landing h1 {
+        font-size:2em;
+    }
+}
+.landing a {
+    color:black;
+}
+.landing-btn {
+    background-color: #929292;
+    color:black;    
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+.landing-btn:hover {
+    background-color: var(--hover-color);
+}
+.icons {
+    bottom:0;
+}
+.icons svg:hover {
+    opacity: 0.7;
+}
+/* end landing */
+/* start teams */
+.team-icons svg {
+    font-size:4em;
+}
+.what-company-does {
+    background-color:var(--second-bg-color);
+    height:auto;
+    padding:70px 0
+}
+.what-company-does button {
+    color:white;
+    background-color: black;
+}
+.what-company-does button:hover {
+    cursor: pointer;
+    background-color:var(--hover-color);
+    color:black;
+}
+/* end teams */
+/* start team */
+.card {
+    box-shadow:0px 0px 5px 5px #ddd6d691;
+}
+.card img {
+    filter: grayscale(0.7);
+}
+.card a {
+    background-color:var(--second-bg-color);
+    transition: 0.4s;
+}
+.card a:hover {
+    background-color:var(--hover-color);
+}
+.statistics {
+    background-color:var(--main-bg-color);
+    height:auto;
+    flex-wrap: wrap;
+}
+.statistic {
+    width: calc(100% / 4)
+}
+@media (max-width:601px) {
+    .statistic {
+        width:100%;
+    }
+}
+/* end team */
+/* start work */
+.work img:hover {
+    opacity: 0.6;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    align-items: center;
+    position: relative;
+}
+.box svg {
+    position: absolute;
+    top:0px;
+    /* right:25px; */
+    right:0;
+    padding:25px;
+}
+.box svg:hover {
+    background-color: var(--hover-color);
+    color:black;
+}
+.skills {
+    background-color: var(--second-bg-color);
+}
+.describe-skills {
+    width:100%;
+}
+@media (min-width: 768px) {
+    .describe-skills {
+        width: 40%;
+    }
+}
+.progress {
+    background-color: #929292;
+    height: 28px;
+}
+.progress-bar {
+    background-color: var(--main-bg-color);
+}
+.progress p {
+    left: 50%;
+    top:50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size:1.3em;
+}
+/* end work */
+/* start pricing */
+.pricing {
+    background-color: var(--main-bg-color);
+}
+.price-heading {
+    width:100%;
+    background-color: black;
+    color: white !important;
+    padding:45px 100px !important;
+    font-size: 1.4em;
+}
+#pro {
+    transform:translateY(-25px)
+}
+#pro-heading{
+    background-color:#f44336;
+    padding:70px 100px !important;
+}
+.price-card {
+    background-color: white;
+    color:black;
+    width: 472px;
+    height:650px;
+    margin-right: 15px;
+    margin-bottom: 100px;
+}
+@media (min-width:974px) {
+    .price-card {
+        width:309px;
+    }
+}
+@media (min-width:1215px) {
+    .price-card {
+        width:390px;
+    }
+}
+@media (min-width:1461px) {
+    .price-card {
+        width:472px !important;
+    }
+}
+.price-card p {
+    margin: 0;
+    width: 100%;
+    height:70px;
+    border-bottom: 1px solid var(--hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-btn {
+    display: flex;
+    align-items: center;
+    height: 128px;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--second-bg-color);
+}
+.price-btn button {
+    padding: 15px 21px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.price-btn button:hover {
+    background-color: var(--hover-color);
+    color: black;
+}
+.price-cost p:first-child {
+    height:130px;
+    border-bottom: none;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+.price-cost p span {
+    font-size:0.4em;
+    font-weight: normal;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0px;
+}
+.price-cost {
+    border-bottom: 1px solid var(--hover-color);
+}
+/* end pricing */
+/* start contact */
+.contact {
+    background-color: var(--second-bg-color);
+}
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+    padding-left: 10px;
+}
+.final-btns {
+    background-color: black !important;
+    width:fit-content;
+    padding:10px 15px !important;
+}
+.final-btns:hover {
+    background-color:var(--hover-color)!important;
+    color: black !important;;
+}
+.location {
+    height:100vh;
+}
+.location img {
+    filter: grayscale(0.7);
+}
+/* end contact */
+/* start footer */
+footer {
+    height:40vh;
+    background-color: black;
+}
+footer .final-btns {
+    background-color: var(--second-bg-color) !important;
+    color: black;
+    padding: 11px 19px !important;
+}
+footer .icons svg {
+    color: white;
+}
+/* end footer */
+
+/* margin auto => the element should have a small width 
+
+You can set the margin property to auto to horizontally center the element within its container.
+
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+
+*/

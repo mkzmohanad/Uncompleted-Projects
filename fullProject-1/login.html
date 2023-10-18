@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/all.min.css">
+        <title>login</title>
+    </head>
+    <style>
+        * {
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ddd;
+        }
+        .hidden {
+            display: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            height: 75vh;
+            border-radius: 25px;
+            width:35%;
+            background-color:white;
+            box-shadow: 0 0 0 white;
+            font-family: 'Cairo', sans-serif;
+        }
+        form h1 {
+            margin-bottom: 100px;
+            color:blue;
+        }
+        input {
+            margin-top:25px;
+            padding:7px 10px;
+            width:90%;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1em;
+            border:0.5px solid gray;
+        }
+        .password-field {
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            position: relative;   
+        }
+        .password-field svg {
+            position: absolute;
+            right:35px;
+            top: 50%;
+            cursor: pointer;
+            transform: translateY(30%);
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            margin-bottom: 50px;
+            width: 35%;
+            background-color: blue;
+            border: 0;
+            outline: none;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color:white;
+            color: blue;
+            border:1px solid blue;
+        }
+        input::placeholder {
+            color:blue;
+        }
+        input:focus::placeholder {
+            visibility: hidden;
+        }
+        .more-options {
+            display: flex;
+            margin-right: 50px;
+            align-items: center;
+            margin-top:20px;
+        }
+        .more-options a {
+            margin-left: 25px;
+            font-size: 1em;
+            opacity: 0.7;
+            text-decoration: none;
+            color: blue;
+            transition: 0.4s;
+        }
+        .more-options a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <body>
+        <form action="/makeSure.html">
+            <h1>Login Page</h1>
+            <input type="email" placeholder="Enter your email address" name="email" required>
+            <div class="password-field">
+                <div class="show-icon">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="hide-icon hidden">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <input id="password" type="password" placeholder="Enter your password" name="password" required>
+            </div>
+            <div class="more-options">
+                <a href="">Forgot Your Password?</a>
+                <a href="/signup.html">New Account?</a>
+            </div>
+            <input type="submit" value="login">
+        </form>
+
+        <script src="/js/all.min.js"></script>
+        <script src="/js/form.js"></script>
+    </body>
+</html>

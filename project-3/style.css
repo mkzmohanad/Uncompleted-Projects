@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin :0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+main {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    background-color:pink;
+    justify-content: center;
+}
+section {
+    border-radius: 20px;
+    border:3px black solid;
+    width: 80%;
+    height:80%;
+    display: flex;
+}
+.playerSec,.computerSec {
+    width: 50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playerSec {
+    border-right:3px solid black;
+}
+.playerSec h2,.computerSec h2 {
+    padding:10px;
+    text-decoration: underline;
+}
+.allMoves {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 40%;
+    height:36%;
+    overflow: hidden;
+}
+.allMoves img {
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    visibility:hidden;
+}
+.playerScoreDiv {
+    margin-bottom:50px;
+}
+.buttons {
+    display:flex;
+    width:90%;
+    justify-content: space-evenly;
+}
+.buttons button {
+    padding:9px 15px;
+    font-size: 1em;
+    border-radius: 10px;
+    border:2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+.restart {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top:30px;
+}
+.restart button {
+    background-color:transparent;
+    border: 0;
+    border:2px solid black;
+    border-radius:10px;
+    padding:3px;
+    cursor: pointer;
+}
+.win {
+    width:100%;
+    height: 100%;
+    background-color:black;
+    position:absolute;
+    z-index: 111;
+    font-size: 2em;
+    color: white;
+    opacity: 0.8;
+}
+.winner {
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}

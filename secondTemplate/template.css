@@ -1,0 +1,541 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+header {
+    background-image: url("/pics/parallax1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:48vh;
+    opacity: 0.75;
+    position: relative;
+    margin-bottom:80px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    /* align-self: flex-start; */
+    justify-content:space-between;
+    width:100%;
+    height:5vh;
+    position:fixed;
+    z-index: 1111111;
+}
+nav span{
+    font-size:1.5em !important;
+}
+ul {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width:15%;
+    list-style: none;
+    color:black;
+}
+ul li a {
+    font-size: 0.8em;
+    padding: 10px 15px;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    text-transform:uppercase;
+    color:rgba(0, 0, 0, 0.79);
+}
+ul li a:hover {
+    background-color:rgba(128, 128, 128, 0.5);
+    color:black;
+}
+.search {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 10px;
+    cursor: pointer;
+    color:black;
+}
+.search:hover {
+    background-color:red;
+    color:white;
+}
+.search span {
+    font-size:1.3em !important;
+}
+.headerText {
+    /* height: 100%; */
+    height:calc(100% - 37.67px);
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:0;
+    z-index: -11111111;
+}
+header p {
+    background-color:rgb(0, 0, 0);
+    letter-spacing:8px;
+    color:white;
+    padding:10px 23px;
+    font-size:1.3em;
+    padding-top:13px;
+}
+.aboutMe,.portfolio,.MyWorks,.contact {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    /* height:100vh; */
+}
+.aboutMeInfo {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:58%;
+}
+.aboutMeInfo h3 {
+    font-weight:400;
+    opacity:0.6;
+    font-size:1.4em;
+}
+.aboutMeInfo p:first-of-type {
+    opacity:0.7;
+    font-style: italic;
+    font-size: 0.85em;
+    padding:25px;
+}
+.aboutMeInfo p {
+    opacity:0.7;
+    font-size: 0.85em;
+    line-height:25px;
+    margin-bottom:50px;
+}
+.aboutMeInfoAndImg{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:70%;
+    margin-bottom: 50px;
+}
+.myImg {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.icon {
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+}
+.icon span {
+    font-size:1.3em !important;
+    margin-right:10px;
+}
+.imgClass {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.myImg img {
+    width: 80%;
+    opacity: 0.6;
+}
+.myImg img:hover {
+    opacity: 1;
+}
+.myPersonalInfo {
+    width:38%;
+    opacity:0.7;
+    line-height:25px;
+    font-size: 0.85em;
+}
+.reallyGoodAt {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:70%;
+    margin-bottom: 50px;
+}
+.firstPar {
+    opacity:0.7;
+    font-size:0.95em;
+    margin-bottom:40px;
+    letter-spacing: 1px;
+}
+.experience {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:80%;
+    margin-bottom:10px;
+}
+.title {
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    width:100%;
+    margin-bottom: 20px;
+}
+.title span {
+    margin-right: 5px;
+    opacity:0.6;
+}
+.title p {
+    opacity:0.6;
+    letter-spacing:10px;
+    font-size: 0.9em;
+}
+.progress {
+    width:100%;
+}
+.div1 {
+    position: relative;
+    width:100%;
+    height:4vh;
+    background-color:rgba(128, 128, 128, 0.25);
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.div2 {
+    background-color: rgba(0, 0, 0, 0.607);
+    width:90%;
+    height:100%;
+    justify-self: flex-start;
+    position: absolute;
+    z-index: -111111111111;
+    left: 0;
+}
+.div1 p {
+    text-align: center;
+    color:white;
+    font-size:0.9em;
+    font-style: italic;
+}
+#secondSkill .div2{
+    width:85%;
+}
+#thirdSkill .div2{
+    width:75%;
+}
+.portfolio {
+    width:100%;
+}
+.workDetails {
+    width:100%;
+    height:15vh;
+    background-color:rgba(0, 0, 0, 0.65);
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.info1,.info2,.info3,.info4 {
+    height:100%;
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+.workDetails span {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+.workDetails p {
+    font-size:0.8em;
+    padding-bottom:10px;
+}
+.portfolioImgAndHeading {
+    width:100%;
+    height:45vh;
+}
+.portfolioImg {
+    background-image: url("/pics/parallax2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.8;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    letter-spacing:10px;
+    font-size: 2em;
+}
+.MyWorks {
+    margin-top:80px;
+}
+.MyWorks h1 {
+    margin-bottom:25px;
+    font-weight: 200;
+    opacity:0.65;
+    font-size: 1.4em;
+}
+.MyWorks p {
+    font-style: italic;
+    margin-bottom:5px;
+    opacity:0.5;
+    font-size:0.9em;
+}
+.gallery {
+    margin-top: 30px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+.allPhotos {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 65%;
+}
+.allPhotos img {
+    width:20%;
+    margin: 7px 7px;
+    cursor: pointer;
+}
+/* .allPhotos img:hover {
+    background-color
+} */
+.hidden {
+    display: none
+}
+.blackPage {
+    width: 100%;
+    height:100vh;
+    background-color:black;
+    position:fixed;
+    top: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+.displayPhotos {
+    position:fixed;
+    top: 25%;
+    z-index: 10;
+}
+.details {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.imgText {
+    color:white;
+    z-index: 10;
+    padding:15px;
+}
+.MyWorks button {
+    padding:15px 20px;
+    border:none;
+    margin-bottom:60px;
+    cursor:pointer;
+}
+.MyWorks button:hover {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.contactImgAndText {
+    width:100%;
+    height:50vh;
+    background-image: url("/pics/parallax3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    margin-bottom:100px;
+}
+.contactImgAndText p {
+    color:white;
+    font-size: 2em;
+    letter-spacing:10px;
+}
+.location {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    /* height:100vh; */
+}
+.IWork {
+    padding-bottom: 25px;
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 1.3em;
+    font-style: none;
+}
+.feedback {
+    font-size: 0.83em;
+    font-style: italic;
+    color:rgba(0, 0, 0, 0.7);
+    padding-bottom: 50px;
+}
+.locationInfo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+}
+.locationImg {
+    width: 19%;
+    padding-right: 25px;
+    align-self: flex-start;
+}
+.locationImg img {
+    width: 100%;
+}
+.myLocation {
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-start;
+    width:35%;
+}
+.locationZone,.phone,.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.myLocation span {
+    padding-right: 20px;
+    cursor: default;
+}
+/* .myLocation span:hover {
+    color: black;
+} */
+.myLocation p {
+    opacity: 0.7;
+    font-size: 1em;
+}
+.coffeeText {
+    margin-top: 15px;
+    font-size: 0.85em;
+}
+.coffeeText p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coffeeText span {
+    padding-right:0;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.locationInputs input {
+    /* display: inline; */
+    padding:10px 5px;
+    width:47%;
+    margin-right: 15px;
+    border:2px solid rgba(0, 0, 0, 0.151);
+    margin-top: 15px;
+}
+.locationInputs #message {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom:7px;
+}
+.button {
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+}
+form #submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color:black;
+    text-transform: uppercase;
+    padding:7px 15px;
+    cursor: pointer;
+    border:none;
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+#submit span {
+    margin:0;
+    padding: 0;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color:rgba(119, 119, 119, 0.4);
+    color: black;
+}
+footer {
+    width: 100%;
+    margin-top:150px;
+    background-color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:35vh;
+}
+footer:hover {
+    background-color:black;
+}
+footer button {
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding:7px 10px;
+    color:#777;
+    cursor: pointer;
+}
+footer button span {
+    margin-right:10px;
+    
+}
+footer button:hover {
+    background-color:rgba(199, 199, 199);
+}
+.links {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    cursor: pointer;
+    padding:25px 10px;
+}
+.links span {
+    padding-right:4px;
+}
+.links span:hover {
+    color:rgb(165, 164, 164);
+}
+.mkz {
+    color:white;
+}
+.mkz span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mkz span:hover {
+    color:rgb(165, 164, 164);
+}
